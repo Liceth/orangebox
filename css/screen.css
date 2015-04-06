@@ -1,0 +1,377 @@
+/**
+ *  Fonts
+ */
+
+@font-face {
+    font-family:"Brandon Grotesque Regular";
+    src: url("../fonts/brandon_reg-webfont.eot");
+    src: url("../fonts/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/brandon_reg-webfont.woff") format("woff"),
+         url("../fonts/brandon_reg-webfont.ttf") format("truetype"),
+         url("../fonts/brandon_reg-webfont.svg#brandon_grotesque_regularRg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+ * Generic rules
+ */
+
+body{
+  font-family:"Open Sans", Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration:none;
+}
+
+/**
+ * Layout
+ */
+
+header{
+  background:#2A2E39;
+}
+
+header h1{
+  margin:0;
+  padding:0;
+}
+
+header h1 a{
+  background:url(../img/logo.png) no-repeat;
+  display:block;
+  height:50px;
+  margin:0 auto;
+  outline:none;
+  text-indent:-9999px;
+  width:250px;
+}
+
+nav h2{
+  display:none;
+}
+
+nav ul{
+  margin:0;
+  padding:0;
+}
+
+nav ul li{
+  list-style-type: none;
+  text-align:center;
+}
+
+nav ul li a{
+  color: white;
+  font-family:"Brandon Grotesque Regular";
+  font-size:1.125em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover{
+  color:#EB6D4C;
+}
+
+nav ul li ul{
+  display:none;
+}
+
+#spotlight{
+  background:url(../img/banner.jpg) no-repeat center top;
+}
+
+#spotlight h2{
+  display:none;
+}
+
+#spotlight p{
+  background-color:#EB6D4C;
+  color:white;
+  font-family:"Brandon Grotesque Regular", Arial, sans-serif;
+  font-size:2.688em;
+  margin:0;
+  padding:0 0.438em;
+  text-align:left;
+  text-transform:uppercase;
+}
+
+.rgba #spotlight p{
+  background:rgba(235,108,76,0.8);
+}
+
+#services{
+  background:#EBEBE8;
+}
+
+/* Clear Fix */
+#services:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+#services h2{
+  display:none;
+}
+
+#services article{
+  float:left;
+  text-align: center;
+}
+
+#services article h3{
+  color:#2A2E39;
+  font-size:2.250em;
+  font-weight:normal;
+  text-transform:uppercase;
+}
+
+#services article a{
+  color:#EB6D4C;
+  font-size:1.250em;
+  font-weight:bold;
+  text-decoration:underline;
+  text-transform:uppercase;
+}
+
+/* Clear Fix */
+#portfolio:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+#portfolio h2{
+  display:none;
+}
+
+#portfolio p, #portfolio ul{
+  margin:0;
+  padding:0;
+}
+
+#portfolio ul li{
+  list-style-type:none;
+  overflow:hidden;
+  padding:0;
+}
+
+#portfolio ul li article{
+
+  position:relative;
+}
+
+#portfolio ul li article .info{
+  background:#EB6D4C;
+  bottom:0;
+  color:white;
+  display:none;
+  left:0;
+  padding:1.500em 1.750em 1.250em 1.250em;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+#portfolio ul li article .info h3{
+  color:white;
+  font-size:1.250em;
+  font-weight:bold;
+  margin:0 0 1em 0;
+  padding:0;
+  text-transform: uppercase;
+}
+
+#portfolio ul li article .info p{
+  color:black;
+  font-size:0.875em;
+}
+
+#portfolio ul li article .info .readmore a{
+  bottom:1em;
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  position:absolute;
+  z-index:1;
+}
+
+#portfolio ul li article img{
+  width:100%;
+}
+
+#portfolio ul li article:hover .info{
+  display: block;
+}
+
+#clients:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+#clients{
+  background:#B6B6B6;
+  padding:1.500em 0 3em 0;
+}
+
+#clients h2{
+  font-family:"Brandon Grotesque Regular";
+  font-size:2.250em;
+  margin:0;
+  padding:0;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+#clients ul{
+  margin:2.500em 0 0 0;
+  padding:0;
+  position:relative;
+  text-align:center;
+}
+
+#clients ul li{
+  list-style-type: none;
+}
+
+/* Clear Fix */
+footer:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+footer{
+  background:#292E39;
+  padding:1.500em 0 2em 0;
+}
+
+footer h2{
+  display:none;
+}
+
+footer p{
+  color: #B6B6B6;
+  font-size:0.875em;
+  text-align:center;
+  padding: 0;
+}
+
+footer ul{
+  margin:1em 0;
+  padding:0;
+}
+
+footer ul li{
+  border-right:1px solid #B6B6B6;
+  list-style-type:none;
+  text-align:center;
+}
+
+footer ul li a{
+  color:#EB6D4C;
+  font-size:0.875em;
+  text-decoration: none;
+}
+
+footer .social{
+  text-align:center;
+}
+
+footer .social li{
+  border-right:0;
+  display:inline-block;
+}
+
+footer .social li a{
+  display:block;
+  height:32px;
+  outline:0;
+  text-indent:-9999px;
+  width:32px;
+}
+
+footer .social li a.facebook{
+  background:url(../img/social-facebook.png) no-repeat;
+}
+
+footer .social li a.twitter{
+  background:url(../img/social-twitter.png) no-repeat;
+}
+
+footer .social li a.youtube{
+  background:url(../img/social-youtube.png) no-repeat;
+}
+
+footer .social li a.pinterest{
+  background:url(../img/social-pinterest.png) no-repeat;
+}
+
+footer .social li a.rss{
+  background:url(../img/social-rss.png) no-repeat;
+}
+
+@media only screen and (min-width: 40.063em) {
+  header{
+    padding: 2em 0;
+  }
+  header h1 a{
+    margin: 0;
+  }
+  nav ul li{
+    border-right:1px solid #78839F;
+    display:inline;
+    text-align:left;
+    padding:0 1.188em;
+  }
+  nav ul li:last-child{
+    border:0;
+    padding-right:0;
+  }
+  #spotlight .columns{
+    height:25em;
+    position:relative;
+  }
+  #spotlight p{
+    bottom:3.125em;
+    left:0;
+    position:absolute;
+    text-align:left;
+    width:45%;
+  }
+  #clients h2{
+    text-align:left;
+  }
+  footer p{
+    margin:0.313em 0 0 0;
+    text-align:left;
+    padding: 0;
+  }
+
+  footer ul{
+    margin:0;
+  }
+
+  footer ul li{
+    display:inline-block;
+    text-align:left;
+    padding:0 0.500em;
+  }
+
+  footer ul li:first-child{
+    padding-left:0;
+  }
+
+  footer ul li:last-child{
+    border-right:0;
+  }
+
+  footer .social li{
+    padding:0;
+  }
+}

@@ -1,0 +1,9 @@
+img{
+  border: 0;
+}
+
+#services article{
+  margin-right:0;
+  padding:0 16px;
+  width:300px;
+}
